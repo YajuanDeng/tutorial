@@ -1,0 +1,9 @@
+.card {
+    width: 327px;
+    height: 478px;
+    border: 1px solid black;
+}
+.media {
+    height: 202px;
+    background-color: bisque;
+}
