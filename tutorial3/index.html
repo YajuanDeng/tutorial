@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <div>
+    <div id="box"> 
+        Caculate Your BMI
+
         <label for="height-input">Height</label>
-        <input type="number" name="height-input" id="height-input" placeholder="in m">
+        <input type="number" name="height-input" id="height-input" placeholder="in m" min="0">
 
         <label for="weight-input">Weight</label>
-        <input type="number" name="weight-input" id="weight-input" placeholder="in Kg">
+        <input type="number" name="weight-input" id="weight-input" placeholder="in Kg" min="0">
+    
+        <button id="button">Caculate</button>
+        <div id="result">
+            This is your result:
+            <p id="yourResult"></p>
+            <p id="caution"></p>
+        </div>   
     </div>
-    <button id="button">Caculate</button>
-    <div id="result"></div>
- 
     <script src="./index.js"></script>
 </body>
 </html>
